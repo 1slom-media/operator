@@ -43,6 +43,16 @@ export default function OrderCard({ data, isTaken }) {
             {data?.name}
           </Typography>
         </Stack>
+        <Stack direction="column" alignItems="left" mb={1}>
+          <Typography variant="caption">Pozitsiya:</Typography>
+          <Typography
+            variant="caption"
+            color="text.legacy"
+            textTransform="capitalize"
+          >
+            {data?.position}
+          </Typography>
+        </Stack>
         <Stack direction="row" alignItems="center">
           <Typography variant="body2">Holati:</Typography>
           <Typography ml={1} variant="body2" color="text.legacy">
